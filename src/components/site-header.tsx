@@ -280,7 +280,7 @@ export function SiteHeader() {
           <a href={url("index.php")} className="shrink-0">
             <img src={logo} alt="Anjuman-I-Islam's M. H. Saboo Siddik College of Engineering" className="h-[80px] w-auto" />
           </a>
-          <div className="flex flex-col gap-5 pt-2 sm:flex-row sm:gap-10">
+          <div className="flex flex-col items-center gap-5 pt-2 sm:flex-row sm:items-start sm:gap-10">
             <div className="flex items-start gap-3">
               <Mail className="mt-1 h-6 w-6 shrink-0 text-navy" strokeWidth={2.2} />
               <div className="leading-tight">
