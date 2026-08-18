@@ -149,7 +149,7 @@ function IeeePage() {
 
       <SiteFooter />
 
-      {active !== null && (
+      {active !== null && gallery[active] && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 p-4"
           role="dialog"
@@ -157,8 +157,8 @@ function IeeePage() {
           onClick={() => setActive(null)}
         >
           <div className="max-h-full w-full max-w-[900px] overflow-auto" onClick={(e) => e.stopPropagation()}>
-            <img src={gallery[active].src} alt={gallery[active].title} className="mx-auto max-h-[75vh] w-auto max-w-full" />
-            <p className="mt-3 text-center text-[13px] text-white">{gallery[active].title}</p>
+            <img src={gallery[active]!.src} alt={gallery[active]!.title} className="mx-auto max-h-[75vh] w-auto max-w-full" />
+            <p className="mt-3 text-center text-[13px] text-white">{gallery[active]!.title}</p>
           </div>
           <button
             type="button"
