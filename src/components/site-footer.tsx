@@ -44,7 +44,7 @@ export function SiteFooter() {
             <h4 className="mb-[20px] text-[18px] font-semibold text-white">Login</h4>
             <ul className="text-[14px]">
               {loginLinks.map((label) => (
-                <li key={label} className="border-b border-white/15 py-[7px] last:border-0">
+                <li key={label} className="border-b border-dashed border-white/25 py-[7px] last:border-0">
                   <a
                     href="https://www.mhssce.ac.in/mhsadmin/admin.php"
                     target="_blank"
