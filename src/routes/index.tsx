@@ -79,7 +79,7 @@ function IeeePage() {
 
         {/* Intro */}
         <section>
-          <div className="mx-auto max-w-[1170px] px-4 pt-[30px] pb-[20px]">
+          <div className="mx-auto max-w-[1170px] px-4 pt-[25px] pb-[20px]">
             <p className="text-justify text-[15px] leading-[1.7]">
               IEEE - <b>Institute of Electrical and Electronics Engineers</b> - is the world’s largest technical
               professional organization dedicated to advancing technology for the benefit of humanity. The IEEE is a
@@ -97,7 +97,7 @@ function IeeePage() {
 
         {/* Committee */}
         <section>
-          <div className="mx-auto max-w-[1170px] px-4 pt-[30px]">
+          <div className="mx-auto max-w-[1170px] px-4 pt-[55px]">
             <h2 className="line-bottom-edu mt-0 text-[24px] font-bold text-heading">Committee</h2>
             <div className="md:w-1/2">
               <div className="overflow-x-auto">

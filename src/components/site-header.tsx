@@ -333,15 +333,17 @@ export function SiteHeader() {
 
           {/* Desktop */}
           <nav className="hidden lg:block">
-            <ul className="flex flex-wrap items-center">
+            <ul className="flex flex-nowrap items-center">
               {nav.map((item) => (
                 <li key={item.label} className="group relative">
                   <a
                     href={item.href}
-                    className="flex items-center gap-1 px-[11px] py-[16px] text-[14px] font-semibold text-white transition-colors group-hover:text-quote"
+                    className="flex items-center gap-[3px] whitespace-nowrap px-[9px] py-[16px] text-[14px] font-semibold text-white transition-colors group-hover:text-quote"
                   >
                     {item.label}
-                    {(item.mega || item.dropdown) && <ChevronDown className="h-[13px] w-[13px]" strokeWidth={2.5} />}
+                    {(item.mega || item.dropdown) && (
+                      <ChevronDown className="h-[12px] w-[12px] shrink-0" strokeWidth={2.5} />
+                    )}
                   </a>
                   {item.mega && <MegaPanel columns={item.mega} />}
                   {item.dropdown && <Dropdown items={item.dropdown} />}
