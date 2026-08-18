@@ -124,7 +124,7 @@ function IeeePage() {
         <section>
           <div className="mx-auto max-w-[1170px] px-4 pt-[40px] pb-[50px]">
             <h2 className="line-bottom-edu mt-0 text-[24px] font-bold text-heading">Gallery</h2>
-            <p className="mb-[20px] text-[14px] text-[#ff0000]">Click on the photo for information.</p>
+            <p className="mb-[20px] text-[14px] text-notice">Click on the photo for information.</p>
             <div className="columns-2 gap-[10px] sm:columns-3 lg:columns-4">
               {gallery.map((item, i) => (
                 <button
