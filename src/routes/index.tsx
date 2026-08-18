@@ -125,20 +125,20 @@ function IeeePage() {
           <div className="mx-auto max-w-[1170px] px-4 pt-[40px] pb-[50px]">
             <h2 className="line-bottom-edu mt-0 text-[24px] font-bold text-heading">Gallery</h2>
             <p className="mb-[20px] text-[14px]">Click on the photo for information.</p>
-            <div className="grid grid-cols-2 gap-[10px] sm:grid-cols-3 lg:grid-cols-4">
+            <div className="columns-2 gap-[10px] sm:columns-3 lg:columns-4">
               {gallery.map((item, i) => (
                 <button
                   key={item.src}
                   type="button"
                   onClick={() => setActive(i)}
                   title={item.title}
-                  className="block overflow-hidden"
+                  className="mb-[10px] block w-full overflow-hidden"
                 >
                   <img
                     src={item.src}
                     alt={item.title}
                     loading="lazy"
-                    className="h-full w-full object-cover transition-opacity hover:opacity-85"
+                    className="block h-auto w-full transition-opacity hover:opacity-85"
                   />
                 </button>
               ))}

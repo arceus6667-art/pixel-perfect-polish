@@ -202,8 +202,8 @@ const nav: Nav[] = [
 
 function MegaPanel({ columns }: { columns: Item[][] }) {
   return (
-    <div className="invisible absolute left-0 top-full z-40 w-full translate-y-1 border-t-2 border-topbar bg-white opacity-0 shadow-lg transition-[opacity,visibility] duration-150 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
-      <div className="mx-auto grid max-w-[1170px] gap-x-8 px-4 py-6 lg:grid-cols-3">
+    <div className="invisible absolute inset-x-0 top-full z-40 border-t-2 border-topbar bg-white opacity-0 shadow-lg transition-[opacity,visibility] duration-150 group-hover:visible group-hover:opacity-100">
+      <div className="grid gap-x-8 px-4 py-6 lg:grid-cols-3">
         {columns.map((col, i) => (
           <ul key={i} className="space-y-1">
             {col.map((item) => (
@@ -332,10 +332,10 @@ export function SiteHeader() {
           </div>
 
           {/* Desktop */}
-          <nav className="hidden lg:block">
+          <nav className="relative hidden lg:block">
             <ul className="flex flex-nowrap items-center">
               {nav.map((item) => (
-                <li key={item.label} className="group relative">
+                <li key={item.label} className={item.dropdown ? "group relative" : "group"}>
                   <a
                     href={item.href}
                     className="flex items-center gap-[3px] whitespace-nowrap px-[9px] py-[16px] text-[14px] font-semibold text-white transition-colors group-hover:text-quote"
